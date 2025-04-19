@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bot Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 border-b border-purple-400">
+    <div class="flex items-center space-x-4">
+      <div class="text-white font-extrabold text-lg">BOT <span class="font-light">LOGO</span></div>
+      <a href="#" class="text-sm hover:underline">Home</a>
+      <a href="#" class="text-sm hover:underline">Features</a>
+      <a href="#" class="text-sm hover:underline">Dashboard</a>
+      <a href="#" class="text-sm hover:underline">Subscription</a>
+    </div>
+    <div class="flex items-center space-x-6">
+      <div class="text-sm relative group cursor-pointer">
+        <span>Documentation</span>
+        <div class="absolute left-0 mt-2 w-32 bg-white text-black rounded-md p-2 opacity-0 group-hover:opacity-100 transition duration-200">
+          <a href="#" class="block hover:underline">Docs v1</a>
+          <a href="#" class="block hover:underline">API</a>
+        </div>
+      </div>
+      <a href="#" class="text-sm hover:underline">About</a>
+      <button class="border border-purple-400 px-4 py-1 rounded-md text-sm hover:bg-purple-600">LOGIN</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="px-8 py-24 relative overflow-hidden">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">It's time to use Bot in your server.</h1>
+    <p class="text-gray-300 mb-6 max-w-xl">
+      Bot is a multi-purpose bot ready to skill up and boost up your Discord server.
+      Also features auto-moderation, administration, music and much more!
+    </p>
+    <div class="flex space-x-4">
+      <button class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-md font-semibold text-white">
+        GET STARTED
+      </button>
+      <button onclick="location.href='https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot';" 
+              class="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-md font-semibold">
+        ADD TO SERVER
+      </button>
+    </div>
+
+    <!-- Wavy bottom background -->
+    <div class="absolute bottom-0 left-0 w-full">
+      <svg viewBox="0 0 1440 320" class="w-full h-48">
+        <path fill="#a78bfa" fill-opacity="1" 
+              d="M0,224L48,192C96,160,192,96,288,90.7C384,85,480,139,576,144C672,149,768,107,864,96C960,85,1056,107,1152,117.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+</body>
+</html>
